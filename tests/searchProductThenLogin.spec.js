@@ -1,10 +1,10 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "../../src/pages/LoginPage/loginPage";
-import productData from "../../src/data/ProductDetail.json"
-import loginData from "../../src/data/LoginPageData.json"
-import { Homepage } from "../../src/pages/homepage";
-import urls from "../../src/data/Urls.json"
-import { ProductDetailPage } from "../../src/pages/ProductDetailPage/productDetailPage";
+import { LoginPage } from "../src/pages/LoginPage/loginPage";
+import productData from "../src/data/ProductDetail.json"
+import loginData from "../src/data/LoginPageData.json"
+import { Homepage } from "../src/pages/homepage";
+import urls from "../src/data/Urls.json"
+import { ProductDetailPage } from "../src/pages/productDetailPage";
 // Test Suite 2: Search first -> Checkout -> Login during checkout
 // --------------------------------------
 test.describe("E-commerce Positive Flow → Search Product → Login at Checkout → Complete Purchase", () => {

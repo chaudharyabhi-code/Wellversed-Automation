@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 import { Homepage } from "../src/pages/homepage";
-import { ProductDetailPage } from "../src/pages/ProductDetailPage/productDetailPage";
+import { ProductDetailPage } from "../src/pages/productDetailPage";
 import urls from "../src/data/Urls.json";
 import productInfo from "../src/data/ProductDetail.json";
 

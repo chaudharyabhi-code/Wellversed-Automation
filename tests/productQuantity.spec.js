@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
-import { Homepage } from "../../src/pages/homepage";
-import { ProductDetailPage } from "../../src/pages/ProductDetailPage/productDetailPage";
-import { CartPageCheckout } from "../../src/pages/cartPageCheckout";
-import urls from "../../src/data/Urls.json";
-import productData from "../../src/data/ProductDetail.json";
+import { Homepage } from "../src/pages/homepage";
+import { ProductDetailPage } from "../src/pages/productDetailPage";
+import { CartPageCheckout } from "../src/pages/cartPageCheckout";
+import urls from "../src/data/Urls.json";
+import productData from "../src/data/ProductDetail.json";
 
 test.describe("🧪 Verify Product productDetailPage Functionalities", () => {
   let homePage;
