@@ -73,7 +73,7 @@ export default defineConfig({
 
   use: {
     //Headed
-    headless: false,
+    headless:false,
   },
 
   /* Run your local dev server before starting the tests */
