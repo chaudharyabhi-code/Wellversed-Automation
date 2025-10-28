@@ -3,7 +3,7 @@ import { Homepage } from "../src/pages/homepage";
 import { ProductDetailPage } from "../src/pages/ProductDetailPage/productDetailPage";
 import urls from "../src/data/Urls.json";
 import productInfo from "../src/data/ProductDetail.json";
-
+// Comment out
 test.describe("E-commerce Product Detail → Out-of-Stock Variant", () => {
     let homepage;
     let searchproduct;
