@@ -6,12 +6,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Updated Code for Wellversed Project",
   "devDependencies": {
-    "@playwright/test": "^1.56.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^24.7.2"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaudharyabhi-code/Wellversed-Automation.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chaudharyabhi-code/Wellversed-Automation/issues"
+  },
+  "homepage": "https://github.com/chaudharyabhi-code/Wellversed-Automation#readme"
 }
