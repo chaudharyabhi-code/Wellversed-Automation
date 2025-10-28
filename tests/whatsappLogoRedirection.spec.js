@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
-import data from "../../src/data/Urls.json";
-import { Homepage } from "../../src/pages/homepage";
+import data from "../src/data/Urls.json";
+import { Homepage } from "../src/pages/homepage";
 
 test.describe(" Verify WhatsApp logo redirects user correctly", () => {
     let homepage;
@@ -11,6 +11,6 @@ test.describe(" Verify WhatsApp logo redirects user correctly", () => {
     });
 
     test("Verify", async ({ page }) => {
-        await homepage.verifyRedirection();
+        await homepage.verfiyWhatsappRedirection();
     });
 });

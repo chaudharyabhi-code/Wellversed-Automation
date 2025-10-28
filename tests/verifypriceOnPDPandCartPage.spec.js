@@ -1,9 +1,9 @@
 import { expect, test } from "@playwright/test";
-import { Homepage } from "../../src/pages/homepage";
-import { ProductDetailPage } from "../../src/pages/ProductDetailPage/productDetailPage";
-import { CartPageCheckout } from "../../src/pages/cartPageCheckout";
-import urls from "../../src/data/Urls.json";
-import productInfo from "../../src/data/ProductDetail.json";
+import { Homepage } from "../src/pages/homepage";
+import { ProductDetailPage } from "../src/pages/productDetailPage";
+import { CartPageCheckout } from "../src/pages/cartPageCheckout";
+import urls from "../src/data/Urls.json";
+import productInfo from "../src/data/ProductDetail.json";
 
 test.describe("E-commerce Product Detail → PDP vs Cart Price Parity", () => {
     let homepage;

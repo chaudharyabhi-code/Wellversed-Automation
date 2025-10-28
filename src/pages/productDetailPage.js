@@ -161,4 +161,25 @@ export class ProductDetailPage {
         const text = await addToCartButton.innerText();
         await expect(text.trim()).toBe("Sold out");
     }
+
+    async filter(stockcheckboxnumber) {
+        const checkbox = this.page.locator('[role="checkbox"]'); // or your specific checkbox locator
+        await checkbox.nth(stockcheckboxnumber).click();
+    }
+
+    //Filter Menu Count
+    async getCount(countLocator, cardCount) {
+        const filterCount = this.page.locator('.text-[13px].ml-2');
+        ///*`[data-testid="nav-desktop-category-${countLocator}"]`*/
+        const text = await filterCount.textContent();
+        const nos = this.page.parseInt(text.trim(), 10);
+        const productcardCount = this.page.locator(`[data-testid="productcard-image"]`)
+        const prodNos = await productcardCount.count();
+        if (nos == prodNos) {
+            console.log("Product Count Matched")
+        }
+        else {
+            console.log("!!!!!Error!!!!!")
+        }
+    }
 }
